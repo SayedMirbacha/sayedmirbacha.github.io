@@ -1,0 +1,30 @@
+/*Sayed Bilaluddin
+     Date <2/15/2024*/
+     header {
+        background-color: blue;
+     }
+     footer {
+        background-color: blue;
+     }
+     p {
+        font-size: 20px;
+     }
+
+     ul {
+        font-size: 20px;
+     }
+     li {
+        font-size: 20px;
+     }
+     a:link {
+        color:cornflowerblue;
+     }
+     a:visited {
+        color: aqua;
+     }
+     a:hover {
+        color: blanchedalmond;
+     }
+     a:active {
+        color: blueviolet;
+     }
