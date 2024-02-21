@@ -1,0 +1,43 @@
+
+body {
+ background: #b0e0fc; 
+}	
+
+#outerwrapper {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-style: dotted;
+}
+
+ 
+h2:first-of-type, h3 {
+  padding-left: .5em;
+}
+
+
+/* add nth-child(odd) to target ul li */
+ul li:nth-child(odd) {
+  font-style: italic;
+}
+
+/* order-based selectors to the anchor tag
+   :link, :visited, :hover, :active */
+a:link {
+  color: aqua;
+}
+a:hover {
+  color: rgb(82, 221, 221);
+}
+
+a:visited {
+  color: chartreuse;
+}
+
+
+footer
+{
+  background: #ffffff; 
+  text-align: center;
+  padding: .25em;
+}
