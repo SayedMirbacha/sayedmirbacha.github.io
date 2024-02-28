@@ -1,0 +1,55 @@
+/* sayed Mirbacha
+Date: 2/7/2024*/
+
+#outerwrapper {
+
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+} 
+
+h1 {
+	font-family: Arial, sans-serif;
+	font-size: 40px;
+}
+
+h2 {
+	font-family: Georgia, serif;
+	font-weight: normal;
+	font-style: italic;
+}
+main ul {
+	list-style-image: url(../images/tomato.png);
+}
+
+body{
+background-color: #B8D1EB;
+text-decoration-color: #000000;
+font-family: 'Times New Roman', Times, serif;
+}
+main {
+	background-color: #C5A98B;
+	padding: 10px;
+}
+
+.floatleft { 
+float: left;
+margin-right: 3%;
+
+}
+
+.floatright {
+float: right;
+margin-left: 3%;
+
+}
+
+main, footer { 
+clear: both;
+}
+footer {
+	font-size: .75em;
+	text-align: center;
+	background-color: beige;
+	padding: 10px 0px; 
+}
