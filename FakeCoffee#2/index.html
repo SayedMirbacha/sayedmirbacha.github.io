@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--#############################################################################################################################
+
+    *** MODIFICATION LOG ***
+    # Original Author: Sayed Mirbacha
+    # Date Created: 08 / 25/ 2024
+    # Date Last modified: 
+    # Last Modified By: Sayed Mirbacha
+    # Modification log:
+
+        version 0.0 - 08/25/2024 - mod Log  and essential files/folder created. in HTML, CSS and some Javascript.
+        version 0.5 - 09/1/2024    just as a landing page for a fake coffee shope business.
+
+        version 1.0 - 09/05/2024 - created product page as a section in the main index file and added pictures
+                                    resize the pictures and added and use HTML< css and javascript for make it work.
+                                -   created a contact form in a separate file named Contact in html, css and javascript
+                     09/15/2024 -   test the contact form and design it and add with color and tested.                            
+          
+-->
+
+<html lang="en">
+    <head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>complete responsive coffee shop website design</title>
+ 
+<!-- font awesome cdn link-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!--custom css file link-->
+<link rel="stylesheet" href="css/style.css">
+
+<script src="js/script.js"></script>
+
+</head>
+        <body>
+<!--header section starts-->
+
+<header class="header">
+    <a href="#" class="logo">
+        <img src="images/coffee logo.png" alt="!">
+    </a>
+
+<nav class="navbar">
+    <a href="index.html">home</a>
+    <a href="#about">about</a>
+    <a href="#menu">menu</a>
+    <a href="#products">products</a>
+    <a href="#review">review</a>
+    <a href="contact.html">contact</a>
+    <a href="#blogs">blogs</a>
+</nav>
+
+<div class="icons">
+    <div class="fas fa-search" id="search-btn"></div>
+    <div class="fas fa-shopping-cart" id="cart-btn"></div>
+    <div class="fas fa-bars" id="menu-btn"></div>
+</div>
+
+<div class="search-form">
+    <input type="search" id="search-box" placeholder="search here...">
+    <label for="search-box" class="fas fa-search"></label>
+</div>
+
+
+</header>
+
+<!--header section ends-->
+
+<!--home section start-->
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>fresh coffee in the morning</h3>
+        <p>fresh coffee in the morning</p>
+       
+    </div>
+    </section>
+    <section id="products">
+        <h2>products</h2>
+    <p>Click on an image to enlarge.</p>
+
+    <ul id="image_list">
+        <li><a href="images/beans.jpg" title="coffee beans">
+            <img src="thumbnails/beans.jpg" alt="Beans"></a></li>
+        <li><a href="images/cup.jpg" title="The Cup!">
+            <img src="thumbnails/cup.jpg" alt="Cup"></a></li>
+        <li><a href="images/mug.jpg" title="Coffee mug">
+            <img src="thumbnails/mug.jpg" alt="Coffee Mug"></a></li>
+    </ul>
+
+    <h2 id="caption">Cup</h2>
+    <p><img id="main_image" src="images/cup.jpg" 
+        alt="Cup"></p>
+    
+    
+    </section>
+
+    
+    <script src="image_swap.js"></script>
+</body> 
+
+</html>

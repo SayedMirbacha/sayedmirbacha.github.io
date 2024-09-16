@@ -1,0 +1,156 @@
+!DOCTYPE html>
+<!--#############################################################################################################################
+
+    *** MODIFICATION LOG ***
+    # Original Author: Sayed Mirbacha
+    # Date Created: 08 / 25/ 2024
+    # Date Last modified: 
+    # Last Modified By: Sayed Mirbacha
+    # Modification log:
+
+        version 0.0 - 08/25/2024 - mod Log  and essential files/folder created. in HTML, CSS and some Javascript.
+        version 0.5 - 09/1/2024    just as a landing page for a fake coffee shope business.
+
+        version 1.0 - 09/05/2024 - created product page as a section in the main index file and added pictures
+                                    resize the pictures and added and use HTML< css and javascript for make it work.
+                                -   created a contact form in a separate file named Contact in html, css and javascript
+                     09/15/2024 -   test the contact form and design it and add with color and tested.                            
+          
+-->
+                     
+<html lang="en">
+    <head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>complete responsive coffee shop website design</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/register.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="images/coffee logo.png" alt="!">
+        </a>
+    
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="#about">about</a>
+        <a href="#menu">menu</a>
+        <a href="#products">products</a>
+        <a href="#review">review</a>
+        <a href="contact.html">contact</a>
+        <a href="#blogs">blogs</a>
+    </nav>
+    
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+    
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+    
+    <div class="cart-items-container">
+    <div class="cart-item">
+        <span class="fas fa-items"></span>
+        <img src="images/images_cart-item-1.JPG"  alt="">
+        <div class="content">
+            <h3>cart-item 01</h3>
+            <div class="price">15.99$</div>
+        </div>
+    </div>
+    <div
+     class="cart-item">
+    <span class="fas fa-items"></span>
+        <img src="images/images_cart-item-2.JPG"  alt="">
+        <div class="content">
+            <h3>cart-item 02</h3>
+            <div class="price">15.99$</div>
+        </div>
+    </div>
+    
+    <div class="cart-item">
+    <span class="fas fa-items"></span>
+        <img src="images/images_cart-item-3.JPG"  alt="">
+        <div class="content">
+            <h3>cart-item 03</h3>
+            <div class="price">15.99$</div>
+        </div>
+    </div>
+    
+    <div class="cart-item">
+        <span class="fas fa-items"></span>
+        <img src="images/images_cart-item-4.JPG"  alt="">
+        <div class="content">
+            <h3>cart-item 04</h3>
+            <div class="price">15.99$</div>
+        </div>
+    </div>
+    
+    <a href="#" class="btn">checkout now</a>
+    
+    
+    
+    </div>
+    
+    
+        
+    </header>
+    <section id="contact">
+        
+        <form action="confirm.html" method="post"></form>
+        <div>
+            <label for="Name">Name:</label>
+            <input type="text" name="Name" id="Name">
+            <span class="error">*</span>
+        </div>
+            <div>
+                <label for="email_address">E-Mail:</label>
+                <input type="text" name="email_address" id="email_address">
+                <span class="error">*</span>
+            </div>
+            <div>
+                <label for="phone">Mobile Phone:</label>
+                <input type="text" name="phone" id="phone">
+                <span class="error">*</span>
+            </div>
+            <div>
+                <label for="country">Country:</label>
+                <select name="country" id="country">
+                    <option value="">Select a country</option>
+                    <option>USA</option>
+                    <option>Canada</option>
+                    <option>Mexico</option>
+                </select>
+                <span class="error">*</span>
+            </div>
+            <div>
+                <label>Contact me by:</label>
+                <input type="radio" name="contact" id="text"
+                    value="text" checked>Text
+                <input type="radio" name="contact" id="email"
+                    value="email">Email
+                <input type="radio" name="contact" id="none"
+                    value="none">Don't contact me
+            </div>
+            <div>
+                <label>Terms of Service:</label>
+                <input type="checkbox" name="terms" id="terms"
+                    value="yes">I accept
+                <span class="error">*</span>
+            </div>
+            <div>
+                <label>&nbsp;</label>
+                <input type="button" id="register" value="Submit">
+                <input type="button" id="reset_form" value="Reset">
+            </div>
+
+        </form>
+
+    </section>
+</body>
+</html>
