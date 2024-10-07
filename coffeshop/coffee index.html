@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<!--#############################################################################################################################
+
+    *** MODIFICATION LOG ***
+    # Original Author: Sayed Mirbacha
+    # Date Created: 08 / 25/ 2024
+    # Date Last modified: 
+    # Last Modified By: Sayed Mirbacha
+    # Modification log:
+
+        version 0.0 - 08/25/2024 - mod Log  and essential files/folder created. in HTML, CSS and some Javascript.
+        version 0.5 - 09/1/2024    just as a landing page for a fake coffee shope business.
+
+        version 1.0 - 09/05/2024 - created product page as a section in the main index file and added pictures
+                                    resize the pictures and added and use HTML< css and javascript for make it work.
+                                -   created a contact form in a separate file named Contact in html, css and javascript
+                     09/15/2024 -   test the contact form and design it and add with color and tested.    
+       Version 1.1 - September 20, 2024
+
+                           Layout Redesign: Using CSS Grid or Flexbox, the landing page layout was improved for a better user experience and to make it look more appealing.
+                              enhanced mobile device responsiveness, guaranteeing that the website looks nice across all screen sizes.
+                              Navigation: To make it simpler to reach the various website areas (Home, Products, Contact), a navigation bar was added.
+                              Smooth scrolling for internal links has been implemented.
+Version 1.2 - September 25, 2024
+
+            Fresh Pages:
+                           Added a "About Us" page with further and values of the coffee business.
+                      created a "Menu" page with information about all of the coffee products that are offered, including costs, specs, and images.
+Version 1.3 - September 29, 2024
+                        Enhancements to the feature: Added a basic CSS transition animation for hover effects on buttons and images.
+                        included an area for user reviews and testimonials on the site under the feedback tab.
+                        Converting JavaScript to TypeScript:
+                        For improved type safety, converted the Contact form's JavaScript code and any other interactive elements to TypeScript.
+Version 1.3 - October  06, 2024
+                        change in layout delete cart icon, make polishing in  design.
+                        delete product sections.
+                        adding live map.
+                        add regex in contact section
+                        added jQuery Dialog Box
+
+          
+-->
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>complete responsive coffee shop website design</title>
+      <!--JQurey Links-->
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+      
+      <!-- font awesome cdn link-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <!--custom css file link-->
+      <link rel="stylesheet" href="coffee style.css">
+      <link rel="stylesheet" href="javascript/script.js">
+   <body>
+      <!--header section starts-->
+      <header class="header">
+         <a href="#" class="logo">
+         <img src="images/coffee logo.png" alt="">
+         </a>
+         <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+            <a href="#blogs">blogs</a>
+         </nav>
+         <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+         </div>
+         <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+         </div>
+         
+      </header>
+      <!--header section ends-->
+      <!--home section start-->
+      <section class="home" id="home">
+         <div class="content">
+            <h3>fresh coffee in the morning</h3>
+            <!--<p>Taste in the mornings </p>
+               <a href="#" class="btn">get yours now-->
+            </a>
+         </div>
+      </section>
+      <!--home section ends-->
+      <!--about section starts-->
+      <section class="about" id="about">
+         <h1 class="heading"><span>about</span></h1>
+         <div class="row">
+            <div class="image">
+               <img src="images/beans background.jpg"   alt="">
+            </div>
+            <div class="content">
+               <h3>what makes our coffee special?</h3>
+               <P>The complexity of the process.</P>
+               <p>The quality of the beans</p>
+               <p>The variety of flavors</p>
+               <p>The brewing process.</p>
+               <p>The unique flavors.</p>
+               <p>roasting process.</p>
+               <p>grading system.</p>
+               <a href="https://coffeehero.com.au/blogs/news/what-makes-specialty-coffee-special" target="_blank"
+                  class="btn">learn more</a>
+            </div>
+         </div>
+      </section>
+      <!--about section ends-->
+      <!--menu section start-->
+      <section class="menu" id="menu">
+         <h1 class="heading"> our <span>menu</span></h1>
+         <div class="box-container">
+            <div class="box">
+               <img src="images/images_menu-1.JPG"  alt="">
+               <h3>tasty and healthy</h3>
+               <div class="price">15.99$<span>20.99</span></div>
+               <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+               <img src="images/images_menu-2.JPG"  alt="">
+               <h3>tasty and healthy</h3>
+               <div class="price">15.99$<span>20.99</span></div>
+               <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+               <img src="images/images_menu-3.JPG"  alt="">
+               <h3>tasty and healthy</h3>
+               <div class="price">15.99$<span>20.99</span></div>
+               <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+               <img src="images/images_menu-4.JPG"  alt="">
+               <h3>tasty and healthy</h3>
+               <div class="price">15.99$<span>20.99</span></div>
+               <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+               <img src="images/images_menu-5.JPG"  alt="">
+               <h3>tasty and healthy</h3>
+               <div class="price">15.99$<span>20.99</span></div>
+               <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+               <img src="images/images_menu-6.JPG"  alt="">
+               <h3>tasty and healthy</h3>
+               <div class="price">15.99$<span>20.99</span></div>
+               <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+               <img src="images/images_menu-7.jpeg"  alt="">
+               <h3>tasty and healthy</h3>
+               <div class="price">15.99$<span>20.99</span></div>
+               <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+               <img src="images/images_menu-8.jpeg"  alt="">
+               <h3>tasty and healthy</h3>
+               <div class="price">15.99$<span>20.99</span></div>
+               <a href="#" class="btn">add to cart</a>
+            </div>
+         </div>
+      </section>
+      <!--menu section ends-->
+
+
+      <!--review section stars-->
+      <section class="review" id="review">
+         <h1 class="heading">customer's <span>review</span></h1>
+         <div class="box-container">
+            <div class="box">
+               <img src="images/images_pic.JPG" alt=""  class="quote">
+               <p>Lorem ipsum odor amet, consectetuer adipiscing elit.
+                   Sed pharetra curae auctor ullamcorper viverra vehicula potenti sed gravida.
+                    Himenaeos facilisis inceptos libero consequat posuere neque, sagittis et.</p>
+
+               <img src="images/images_person.jpg"  class="user"  alt="">
+               <h3>john deo</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+            </div>
+            <div class="box">
+               <img src="images/images_pic.JPG"  alt=""  class="quote">
+               <p>Lorem ipsum odor amet, consectetuer adipiscing elit.
+                  Sed pharetra curae auctor ullamcorper viverra vehicula potenti sed gravida.
+                   Himenaeos facilisis inceptos libero consequat posuere neque, sagittis et.</p>
+
+               <img src="images/images_person2.jpg"  class="user"  alt="">
+               <h3>john deo</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+            </div>
+            <div class="box">
+               <img src="images/images_pic.JPG"  alt=""  class="quote">
+               <p>Lorem ipsum odor amet, consectetuer adipiscing elit.
+                  Sed pharetra curae auctor ullamcorper viverra vehicula potenti sed gravida.
+                   Himenaeos facilisis inceptos libero consequat posuere neque, sagittis et.</p>
+
+               <img src="images/images.person3jpg.jpg"  class="user"  alt="">
+               <h3>john deo</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--review section ends-->
+      <!--contact section starts-->
+     
+      <section class="contact" id="contact">
+         <h1 class="heading"> <span>contact</span>us</h1><br>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92436.38805393924!2d-116.65967702865602!3d43.61409658110085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54ae4d7c9c41b447%3A0xc1b887c4f21c12e8!2sCollege%20of%20Western%20Idaho!5e0!3m2!1sen!2sus!4v1728173142231!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         <br>
+         <div class="row">
+           
+            <form action="">
+               <h3>get in touch</h3>
+               <div class="inputBox">
+                  <span class="fas fa-user"></span>
+                  <input type="text" placeholder="name">
+               </div>
+               <div class="inputBox">
+                  <span class="fas fa-envelope"></span>
+                  <input type="email" placeholder="name@domain.com" autocomplete="off" 
+                  autofocus required>
+               </div>
+               <div class="inputBox">
+                  <span class="fas fa-phone"></span>
+                  <input type="tel" name="phone" id="phone" 
+                  autocomplete="off" 
+                  pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+                  title="Must be nnn-nnn-nnnn" required>
+               </div>
+               <!-- <div class="inputBox">
+                  <label>Contact me by:</label>
+                  <input type="radio" name="contact" id="text"
+                      value="text" checked>Text
+                  <input type="radio" name="contact" id="email"
+                      value="email">Email
+                  <input type="radio" name="contact" id="none"
+                      value="none">Don't contact me<br>
+      
+                  <label>Terms of Service:</label>
+                  <input type="checkbox" name="terms" id="terms"
+                      value="yes" required>I accept -->
+               </div>
+               <input type="submit" value="contact now" class="btn">
+            </form>
+         </div>
+      </section>
+      <!--contact section ends-->
+      <!--blogs section starts-->
+      <section class="blogs" id="blogs">
+         <h1 class="heading"> our <span>blogs</span></h1>
+         <div class="box-container">
+            <div class="box">
+               <div class="image">
+                  <img src="images/images_blog-1.JPG"   alt="">
+               </div>
+               <div class="content">
+                  <a href="#" class="title">tasty and refreshing coffeee</a>
+                  <span> by admin 20 August 2024</span>
+                  <p>Lorem ipsum odor amet, consectetuer adipiscing elit.
+                     Sed pharetra curae auctor ullamcorper viverra vehicula potenti sed gravida.
+                      Himenaeos facilisis inceptos libero consequat posuere neque, sagittis et.</p>
+  
+                  <a href="#" class="btn">read more</a>
+               </div>
+            </div>
+            <div class="box">
+               <div class="image">
+                  <img src="images/images_blog-2.JPG"   alt="">
+               </div>
+               <div class="content">
+                  <a href="#" class="title">tasty and refreshing coffeee</a>
+                  <span> by admin 20 August 2024</span>
+                  <p>Lorem ipsum odor amet, consectetuer adipiscing elit.
+                     Sed pharetra curae auctor ullamcorper viverra vehicula potenti sed gravida.
+                      Himenaeos facilisis inceptos libero consequat posuere neque, sagittis et.</p>
+  
+                  <a href="#" class="btn">read more</a>
+               </div>
+            </div>
+            <div class="box">
+               <div class="image">
+                  <img src="images/images_blog-3.JPG"   alt="">
+               </div>
+               <div class="content">
+                  <a href="#" class="title">tasty and refreshing coffee</a>
+                  <span> by admin 20 August 2024</span>
+                  <p>Lorem ipsum odor amet, consectetuer adipiscing elit.
+                     Sed pharetra curae auctor ullamcorper viverra vehicula potenti sed gravida.
+                      Himenaeos facilisis inceptos libero consequat posuere neque, sagittis et.</p>
+  
+                  <a href="#" class="btn">read more</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--blogs section ends-->
+      <section class="dialog">
+         <div id="dialog" title="Basic dialog">
+            <p>Thanks for you're time and attention for my website</p>
+          </div>
+
+      </section>
+      <!--footer section starts-->
+      <section class="footer">
+         <div class="shar">
+            <a href="https://www.facebook.com/"target="_blank" class="fab fa-facebook-f"></a>
+            <a href="https://x.com/i/flow/login"target="_blank" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/"target="_blank" class="fab fa-instagram"></a>
+            <a href="https://www.linkedin.com/"target="_blank" class="fab fa-linkedin"></a>
+         </div>
+         <div class="credit"> created by <span>sayed mirbacha </span></div>
+      </section>
+      <!--footer section ends-->
+      <!--custom js file link-->
+      <script src="javascript/script.js"></script>
+      
+   </body>
+   </head>
+</html>
