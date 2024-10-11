@@ -1,0 +1,52 @@
+.confirm {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(129, 79, 8);
+    margin: 1em auto;
+    width: 600px;
+    padding: 0 2em 1em;
+    border: 1px solid rgb(236, 219, 219);
+    border-radius: .5em;
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    -ms-border-radius: .5em;
+    -o-border-radius: .5em;
+    border: outset;
+    align-items: center;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: top,center;
+    background: url(../images/beans\ for\ home.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    color: #fff;
+    margin: 0 0.5em 1em 1em;
+    padding: 0.25em;
+}
+
+p{
+    color: #f3eded;
+}
+
+
+.btn{
+  margin: center;
+  background: #d3ad7f;
+  background-image: -webkit-linear-gradient(top, #d3ad7f, #936015);
+  background-image: -moz-linear-gradient(top, #d3ad7f, #936015);
+  background-image: -ms-linear-gradient(top, #d3ad7f, #936015);
+  background-image: -o-linear-gradient(top, #d3ad7f, #936015);
+  background-image: linear-gradient(to bottom, #d3ad7f, #936015);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
