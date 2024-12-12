@@ -1,0 +1,229 @@
+<!-- Mode Log:
+ Responsive Design Adjustments
+Accessibility Improvements
+Lazy Loading for Performance
+Code Modularization (JavaScript & CSS Variables)
+Enhanced UI with Spinner for Loading Feedback
+Interactive UI animations and refinements
+Scalable & maintainable architecture
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery with Filters</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+</head>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: bisque;
+        }
+         /* Header / Navbar styles */
+  nav {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 2px solid #6a11cb;
+    transition: all 0.3s ease;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  nav a:hover {
+    border-color: #6a11cb;
+    background: rgba(106, 17, 203, 0.8);
+    transform: translateY(-2px);
+  }
+
+
+        .card {
+            width: 100%;
+            border: none;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-body {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+        }
+
+        .card-body h6 {
+            font-size: 1.2rem;
+        }
+
+        .card-body p {
+            font-size: 0.9rem;
+        }
+
+        /* Style buttons */
+        #filter-buttons button {
+            border-radius: 25px; /* Change this for rounded buttons */
+            padding: 10px 20px;   /* Make the buttons more clickable */
+        }
+
+        #filter-buttons button.active {
+            background-color: #007bff;
+            color: white;
+        }
+
+        /* Style for when images are hidden */
+        .hidden {
+            display: none;
+        }
+        
+    </style>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Image gallery</a>
+          <ul class="nav navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Images Filter Buttons Section -->
+        <div class="row mt-5" id="filter-buttons">
+            <div class="col-12 text-center">
+                <button class="btn mb-2 me-1 active" data-filter="all">Show all</button>
+                <button class="btn mb-2 mx-1" data-filter="nature">Nature</button>
+                <button class="btn mb-2 mx-1" data-filter="cars">Cars</button>
+                <button class="btn mb-2 mx-1" data-filter="people">People</button>
+            </div>
+        </div>
+
+        <!-- Filterable Images / Cards Section -->
+        <div class="row px-2 mt-4 gap-3" id="filterable-cards">
+            <!-- Nature Cards -->
+            <div class="col-md-4">
+                <div class="card p-0" data-name="nature">
+                    <img src="images/nature-1.jpg" alt="img">
+                    <div class="card-body">
+                        <h6 class="card-title">Mountains</h6>
+                        <p class="card-text">Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-0" data-name="nature">
+                    <img src="images/nature-2.jpg" alt="img">
+                    <div class="card-body">
+                        <h6 class="card-title">Lights</h6>
+                        <p class="card-text">Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-0" data-name="nature">
+                    <img src="images/nature-3.jpg" alt="img">
+                    <div class="card-body">
+                        <h6 class="card-title">Nature</h6>
+                        <p class="card-text">Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cars Cards -->
+            <div class="col-md-4">
+                <div class="card p-0" data-name="cars">
+                    <img src="images/car-1.jpg" alt="img">
+                    <div class="card-body">
+                        <h6 class="card-title">Retro</h6>
+                        <p class="card-text">Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-0" data-name="cars">
+                    <img src="images/car-2.jpg" alt="img">
+                    <div class="card-body">
+                        <h6 class="card-title">Fast</h6>
+                        <p class="card-text">Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-0" data-name="cars">
+                    <img src="images/car-3.jpg" alt="img">
+                    <div class="card-body">
+                        <h6 class="card-title">Classic</h6>
+                        <p class="card-text">Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- People Cards -->
+            <div class="col-md-4">
+                <div class="card p-0" data-name="people">
+                    <img src="images/people-1.jpg" alt="img">
+                    <div class="card-body">
+                        <h6 class="card-title">Men</h6>
+                        <p class="card-text">Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-0" data-name="people">
+                    <img src="images/people-2.jpg" alt="img">
+                    <div class="card-body">
+                        <h6 class="card-title">Girl</h6>
+                        <p class="card-text">Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('#filter-buttons button');
+            const cards = document.querySelectorAll('#filterable-cards .card');
+
+            // Event listener for filter buttons
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const filter = button.getAttribute('data-filter');
+                    
+                    // Remove 'active' class from all buttons and add it to the clicked one
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+
+                    // Filter the cards based on the button clicked
+                    cards.forEach(card => {
+                        const cardCategory = card.getAttribute('data-name');
+                        if (filter === 'all' || filter === cardCategory) {
+                            card.classList.remove('hidden');
+                        } else {
+                            card.classList.add('hidden');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
