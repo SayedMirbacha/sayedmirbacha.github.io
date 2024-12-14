@@ -1,0 +1,14 @@
+/* General Reset */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* About Section Styling */
+  #about,
+  #contact {
+    text-align: center;
+    padding: 20px;
+  }
+  
